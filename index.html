@@ -138,6 +138,9 @@ footer .rw{display:flex;flex-wrap:wrap;gap:.3rem 1.6rem;justify-content:space-be
 .band .memo h3{color:var(--green)}
 .ledger b span{font:inherit;color:inherit}
 .memo ol li.none::before{content:none}
+
+/* design rule: no decorative italic accents in headings */
+:is(h1,h2,h3) :is(em,i){font-style:normal!important;font-family:inherit!important}
 </style>
 </head>
 <body>
@@ -152,7 +155,6 @@ footer .rw{display:flex;flex-wrap:wrap;gap:.3rem 1.6rem;justify-content:space-be
 <main id="main" tabindex="-1">
 <section class="hero" id="top"><div class="wrap">
   <div>
-    <span class="m eye">Hicksville, Long Island</span>
     <h1><span class="l"><span style="--d:0">Your business</span></span><span class="l"><span style="--d:1">is <em>my business.</em></span></span></h1>
     <p class="lede rv" style="--d:4;margin-top:1.4rem">Tax preparation, bookkeeping and payroll for small business owners.</p>
     <div class="cta rv" style="--d:5"><a class="btn" href="tel:+15164334446">Call to discuss</a><button class="btn o" type="button" data-go="need">Tell us what you need</button></div>
