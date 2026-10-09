@@ -104,7 +104,8 @@ em{font-style:italic;color:var(--brass)}
 .chk button[aria-pressed=true]{background:rgba(255,255,255,.1);border-color:#d9b866}
 .chk button[aria-pressed=true] i{background:#d9b866;color:var(--green)}
 .memo{background:var(--card);color:var(--ink);padding:clamp(1.2rem,3vw,1.8rem);border-top:6px solid var(--brass)}
-.memo h3{font-size:1.7rem}
+.memo .m{display:block;margin-bottom:.7rem}
+.memo h3{font-size:1.7rem;line-height:1.15}
 .memo ol{margin:1rem 0;display:grid;gap:.4rem;counter-reset:m;min-height:3rem}
 .memo ol li{counter-increment:m;display:grid;grid-template-columns:2rem 1fr;border-bottom:1px dashed var(--rule);padding-bottom:.4rem}
 .memo ol li::before{content:counter(m,decimal-leading-zero);font-family:var(--mono);font-size:.74rem;color:var(--brass);padding-top:.25rem}
