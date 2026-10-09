@@ -120,6 +120,13 @@ em{font-style:italic;color:var(--brass)}
 /* contact */
 .ct{display:grid;gap:2.2rem;align-items:start}
 @media(min-width:920px){.ct{grid-template-columns:.9fr 1.1fr;gap:3.6rem}}
+.ct-card{margin-top:1.6rem;border:1.5px solid var(--green);background:var(--card);padding:1.1rem 1.4rem}
+.ct-card>.m{display:block;color:var(--brass);margin-bottom:.6rem}
+.ct-card ul{list-style:none;margin:0;padding:0}
+.ct-card li{display:grid;grid-template-columns:2.4rem 1fr;align-items:baseline;padding:.5rem 0;border-top:1px dashed var(--rule);font-family:var(--serif);font-size:1.25rem;color:var(--green)}
+.ct-card li .m{font-size:.74rem;color:var(--brass)}
+@media(min-width:920px){.ct{align-items:stretch}.ct>div:first-child{display:flex;flex-direction:column;align-items:flex-start}.ct-card{margin-top:auto;align-self:stretch}.ct>div:last-child{display:flex;flex-direction:column}.ct>div:last-child>form{flex:1;grid-template-rows:auto auto 1fr auto auto}.ct form>label:has(textarea){display:grid;grid-template-rows:auto 1fr}.ct form textarea{height:100%}}
+
 .ct .tel{font-family:var(--serif);font-size:clamp(2.4rem,7vw,4rem);text-decoration:none;color:var(--green);display:inline-flex;min-height:48px;align-items:center;margin-top:.6rem;background:var(--paper)}
 form{display:grid;gap:1rem;background:var(--card);border:1.5px solid var(--green);padding:clamp(1.2rem,3vw,1.8rem)}
 .f2{display:grid;gap:1rem}
@@ -208,9 +215,11 @@ footer .rw{display:flex;flex-wrap:wrap;gap:.3rem 1.6rem;justify-content:space-be
 </div></section>
 
 <section class="sec" id="contact" tabindex="-1" style="padding-top:0"><div class="wrap ct">
-  <div><span class="m eye">Contact</span><h2 class="ul">Give us a call.</h2><br>
+  <div><span class="m eye">Contact</span><h2 class="ul">Give us a call.</h2>
     <a class="tel rv" href="tel:+15164334446">(516) 433-4446</a>
-    <p class="rv" style="--d:1;background:var(--paper)">Martin C. Marcus Co, LLC<br>168 Rim Lane, Hicksville, NY 11801</p></div>
+    <p class="rv" style="--d:1;background:var(--paper);margin-bottom:1.6rem">Martin C. Marcus Co, LLC<br>168 Rim Lane, Hicksville, NY 11801</p>
+    <div class="ct-card rv" style="--d:2"><span class="m">Call about</span>
+      <ul><li><span class="m">01</span>Tax preparation</li><li><span class="m">02</span>Bookkeeping</li><li><span class="m">03</span>Payroll</li></ul></div></div>
   <div class="rv" style="--d:1">
     <form id="form" novalidate>
       <div class="f2"><label class="m">Name<input id="f-name" autocomplete="name" required><span class="err" hidden>Please enter your name.</span></label>
